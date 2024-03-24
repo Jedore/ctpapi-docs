@@ -1,6 +1,7 @@
 site_name: CTPAPI-DOCS
 repo_url: https://github.com/Jedore
 repo_name: Jedore
+site_dir: ctpapi-docs
 theme:
   language: zh
   name: material
@@ -57,7 +58,7 @@ copyright: Copyright &copy; 2024 Jedore
 
 extra:
   generator: true
-  homepage: https://www.jedore.top/ctpapi-docs
+#  homepage: https://www.jedore.top/ctpapi-docs
 
 nav:
 - Home: index.md
