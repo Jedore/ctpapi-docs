@@ -9,7 +9,7 @@ theme:
 #  favicon: images/openctp.jpg
   icon:
     repo: fontawesome/brands/github
-#    view: material/eye
+  #    view: material/eye
   features:
     - navigation.top
     - navigation.tabs
@@ -57,8 +57,10 @@ copyright: Copyright &copy; 2024 Jedore
 
 extra:
   generator: true
+  homepage: https://www.jedore.top/ctpapi-docs
 
 nav:
+- Home: index.md
 - 6.3.15:
     ' ':
     - 主页: 6.3.15/ZY.md
