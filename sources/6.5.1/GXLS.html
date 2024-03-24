@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<!-- saved from url=(0016)http://localhost -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+<title>
+文档版本与重要更新</title>
+<meta name="info" content="GXLS.md" >
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+<meta http-equiv="Content-Type" content="text/html;charset=gb18030">
+<link id='theme_link' rel="stylesheet" href="lesson_light.css" type="text/css">
+<link id='custom_theme_link' rel="stylesheet" href="custom_lesson_light.css" type="text/css">
+<link id='menu_theme_link' rel="stylesheet" href="menu_light.css" type="text/css" />
+<link id='custom_menu_theme_link' rel="stylesheet" href="custom_menu_light.css" type="text/css" />
+<script>
+function ShowPage()
+{
+document.getElementById('content').style.visibility = "visible";
+document.body.style.fontSize = 16+'px';
+}
+function HidePage()
+{
+document.getElementById('content').style.visibility = "hidden";
+}var theme_css_prefix = 'lesson_';var path_prefix = '';
+function ShowImages()
+{
+    imgs = document.getElementsByTagName('img');
+    imgsnum = imgs.length;
+    for (imgi = 0; imgi < imgsnum; imgi++)
+    {
+        if ((typeof(imgs[imgi].src) == 'undefined' || imgs[imgi].src == '') &&
+             imgs[imgi].getAttribute('thissrc') != null)
+            imgs[imgi].src = imgs[imgi].getAttribute('thissrc');
+    }
+}
+
+function HideImages()
+{
+    imgs = document.getElementsByTagName('img');
+    imgsnum = imgs.length;
+    for (imgi = 0; imgi < imgsnum; imgi++)
+    {
+        if (typeof(imgs[imgi].src) != 'undefined' && imgs[imgi].src != '')
+            imgs[imgi].thissrc = imgs[imgi].getAttribute('src');
+            imgs[imgi].src = '';
+    }
+}
+
+function SwitchTheme()
+{
+    var css = document.getElementById('theme_link');
+    var custom_css = document.getElementById('custom_theme_link');
+    var menu_css = document.getElementById('menu_theme_link');
+    var custom_menu_css = document.getElementById('custom_menu_theme_link');
+    var url;
+    var custom_url;
+    var menu_url;
+    var custom_menu_url;
+    if (theme_css_prefix != 'presentation_'){ theme_css_prefix = 'lesson_' }
+    var theme = 'light';
+	if (/.*_dark.css$/.test(css.getAttribute('href'))) theme = 'dark';
+    if (theme == 'light')
+    {
+        url = path_prefix + theme_css_prefix + 'dark.css';
+        custom_url = path_prefix + 'custom_' + theme_css_prefix + 'dark.css';
+        menu_url = path_prefix + 'menu_dark.css';
+        custom_menu_url = path_prefix + 'custom_menu_dark.css';
+        window.name = 'dark';
+    }
+    else
+    {
+        url = path_prefix + theme_css_prefix + 'light.css';
+        custom_url = path_prefix + 'custom_' + theme_css_prefix + 'light.css';
+        menu_url = path_prefix + 'menu_light.css';
+        custom_menu_url = path_prefix + 'custom_menu_light.css';
+        window.name = 'light';
+    }
+    if (css) css.setAttribute('href', url);
+    if (custom_css) custom_css.setAttribute('href', custom_url);
+    if (menu_css) menu_css.setAttribute('href', menu_url);
+    if (custom_menu_css) custom_menu_css.setAttribute('href', custom_menu_url);
+}
+
+function LoadTheme(new_theme)
+{
+    var css = document.getElementById('theme_link');
+    var custom_css = document.getElementById('custom_theme_link');
+    var menu_css = document.getElementById('menu_theme_link');
+    var custom_menu_css = document.getElementById('custom_menu_theme_link');
+    var url;
+    var custom_url;
+    var menu_url;
+    var custom_menu_url;
+    if(theme_css_prefix != 'presentation_'){ theme_css_prefix = 'lesson_' }
+    var theme = 'light';
+	if (/.*_dark.css$/.test(css.getAttribute('href'))) theme = 'dark';
+    if (new_theme && new_theme != theme)
+    {
+        if (new_theme == 'dark')
+        {
+            url = path_prefix + theme_css_prefix + 'dark.css';
+            custom_url = path_prefix + 'custom_' + theme_css_prefix + 'dark.css';
+            menu_url = path_prefix + 'menu_dark.css';
+            custom_menu_url = path_prefix + 'custom_menu_dark.css';
+        }
+        else
+        {
+            url = path_prefix + theme_css_prefix + 'light.css';
+            custom_url = path_prefix + 'custom_' + theme_css_prefix + 'light.css';
+            menu_url = path_prefix + 'menu_light.css';
+            custom_menu_url = path_prefix + 'custom_menu_light.css';
+        }
+        if (css) css.setAttribute('href', url);
+        if (custom_css) custom_css.setAttribute('href', custom_url);
+        if (menu_css) menu_css.setAttribute('href', menu_url);
+        if (custom_menu_css) custom_menu_css.setAttribute('href', custom_menu_url);
+    }
+}
+
+function LoadUserSelectedTheme()
+{
+    if(window.name == 'dark' || window.name == 'light')
+    {
+    LoadTheme(window.name);
+    }
+}
+</script>
+</head>
+<body onLoad="ShowPage()">
+<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>文档版本与重要更新</p><hr class="headerline"/><div id="content"><script src="jquery-1.7.0.min.js"></script><script src="menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
+{
+var qTitle=document.getElementById(questionTitleId);
+var qChoiceText0="",qChoiceText1="",qChoiceText2="",qChoiceText3="";var qChoice0=document.getElementById(questionChoice0Id);
+if(qChoice0){ qChoiceText0="A." + qChoice0.innerText + "\r\n";}var qChoice1=document.getElementById(questionChoice1Id);
+if(qChoice1){ qChoiceText1="B." + qChoice1.innerText + "\r\n";}var qChoice2=document.getElementById(questionChoice2Id);
+if(qChoice2){ qChoiceText2="C." + qChoice2.innerText + "\r\n";}var qChoice3=document.getElementById(questionChoice3Id);
+if(qChoice3){ qChoiceText3="D." + qChoice3.innerText + "\r\n";}var ta = document.createElement('textarea');
+ta.value = qTitle.innerText + "\r\n" + qChoiceText0 + qChoiceText1 + qChoiceText2 + qChoiceText3 + "\r\n";
+examDiv.appendChild(ta);
+ta.select();
+document.execCommand("Copy");
+ta.style.display = 'none';
+alert('已复制');
+}
+</script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
+{
+var qTitle=document.getElementById(questionTitleId);
+var ta = document.createElement('textarea');
+ta.value = qTitle.innerText + "\r\n";
+examDiv.appendChild(ta);
+ta.select();
+document.execCommand("Copy");
+ta.style.display = 'none';
+alert('已复制');
+}
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#f1c67f81-3d4c-4236-879c-a6c9326fb70d">1.版本</a></p><p><a href="#abf25cec-5f9e-45f3-bb6e-d6a4fb5217a6">2.更新历史</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="YDZY.html" alt="←">&lt; 前页</a> <a href="_index.html" alt="Ctrl+I">回目录</a> <a href="6.5.1BBGXSM.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>描述主要和重要更新内容。</p>
+<span id="f1c67f81-3d4c-4236-879c-a6c9326fb70d" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.版本</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
+<p><strong>v2020.12.24</strong></p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="abf25cec-5f9e-45f3-bb6e-d6a4fb5217a6" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2.更新历史</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
+<ul>
+<li><p>2021/1/25</p>
+<ol>
+<li><p>新增页面6.5.1版本更新说明补充说明</p></li>
+<li><p>对ReqQryClassifiedInstrument、ReqQryCombPromotionParam添加说明</p></li>
+</ol></li>
+<li><p>2021/1/6</p>
+<ol>
+<li>修正6.5.1版本更新说明中运行环境说明，windows支持32位和64位。</li>
+</ol></li>
+<li><p>2020/12/24</p>
+<ol>
+<li><p>添加brokerid在认证中是必填字段</p></li>
+<li><p>6.5.1中ipv6说明RegisterFens->RegisterNmaeServer修订</p></li>
+<li><p>主页添加线程数说明</p></li>
+</ol></li>
+<li><p>2020/12/10</p>
+<ol>
+<li><p>调整Tas手续费和保证金说明</p></li>
+<li><p>修改OnRtnBulletin说明属于公有流</p></li>
+<li><p>修改OnRtnInstrumentStatus问答</p></li>
+<li><p>调整ReqQryInstrument中FAQ说明</p></li>
+<li><p>调整ReqQueryMaxOrderVolume名称为ReqQryMaxOrderVolume</p></li>
+<li><p>增加OnFrontDisconnected说明</p></li>
+<li><p>“做市商询价和报价”页面对于是否会撤销前一次报价说明增加七期说明</p></li>
+<li><p>大商所组保合约名称修改BUL->BLS   BER->BES</p></li>
+<li><p>主页增加字符集说明</p></li>
+<li><p>增加Ref字段需要递增说明</p></li>
+<li><p>对于银期转账中TradeCode说明修改。</p></li>
+<li><p>SubscribePublicTopic增加一种私有流方式</p></li>
+<li><p>“大商所组保”增加FAQ说明</p></li>
+</ol></li>
+<li><p>2020/11/6</p>
+<ol>
+<li><p>增加各个接口对ipv6的说明</p></li>
+<li><p>修订RegisterUserSystemInfo、SubmitUserSystemInfo接口字段说明</p></li>
+</ol></li>
+<li><p>2020/10/21</p>
+<ol>
+<li><p>更新6.5.1apichm说明</p></li>
+<li><p>新增6.5.1api版本说明</p></li>
+<li><p>新增两个接口ReqQryClassifiedInstrument、ReqQryCombPromotionParam对应的回调OnRspQryClassifiedInstrument、OnRspQryCombPromotionParam</p></li>
+<li><p>ReqQueryMaxOrderVolume接口修改为ReqQryMaxOrderVolume，对应的回调OnRspQueryMaxOrderVolume修改为OnRspQryMaxOrderVolume</p></li>
+</ol></li>
+<li><p>2020/04/29</p>
+<ol>
+<li><p>更新到6.3.19 api说明，更新对应新增字段。</p></li>
+<li><p>新增tas介绍</p></li>
+<li><p>新增fens介绍</p></li>
+<li><p>更正代码示例错误，Release()前使用RegisterSpi(NULL)，这个代码是错误的，会导致api概率崩溃。</p></li>
+<li><p>新增ReqUserLogout、ReqAuthenticate、增加流控参数部分说明、郑商所行情说明。</p></li>
+</ol></li>
+<li><p>2020/03/13</p>
+<ol>
+<li>新增init/release线程安全说明</li>
+</ol></li>
+<li><p>2020/03/06</p>
+<ol>
+<li>修正logout之后是否会触发重连机制</li>
+</ol></li>
+<li><p>2020/02/21</p>
+<ol>
+<li><p>新添加通讯模式中基本接口所属的数据流</p></li>
+<li><p>完善做市商接受询价的说明</p></li>
+<li><p>修改对于撤单接口就上期所新增挂单激活操作在本系统是否支持说明</p></li>
+<li><p>新增条件单说明</p></li>
+<li><p>新增各个交易所盘中行情合约状态推送的具体状态</p></li>
+</ol></li>
+<li><p>2019/11/28</p>
+<ol>
+<li><p>新增做市商询价和报价指令介绍</p></li>
+<li><p>修正SubscribeForQuoteRsp中FAQ回答错误。普通投资者只能订阅上期所和中金所询价通知 改为 普通投资者能订阅四所的询价通知。</p></li>
+</ol></li>
+<li><p>2019/07/12</p>
+<ol>
+<li>新增报单回调规则、报价回调规则</li>
+</ol></li>
+<li><p>2019/07/03</p>
+<ol>
+<li>新增相关穿透式的一些问题回答</li>
+</ol></li>
+<li><p>2019/06/27</p>
+<ol>
+<li><p>新增大商所组保业务说明</p></li>
+<li><p>修正OnRspQryInvestorPosition和OnRspQryInvestorPositionDetail里缺失TimeFirstVolume和PositionCostOffset字段的问题</p></li>
+</ol></li>
+<li><p>2019/06/05</p>
+<ol>
+<li>新增CTP流控说明</li>
+</ol></li>
+<li><p>2019/05/27</p>
+<ol>
+<li><p>新增交易接口和行情接口代码示例说明。</p></li>
+<li><p>新增阅读指引，方便用户快速上手chm文档。</p></li>
+</ol></li>
+<li><p>2019/04/29</p>
+<ol>
+<li>新增看穿式监管数据采集的常见FAQ。</li>
+</ol></li>
+<li><p>2019/4/11</p>
+<ol>
+<li>新增二代行情API接口说明，该API新增接口QryMulticastInstrument。</li>
+</ol></li>
+<li><p>2019/3/14</p>
+<ol>
+<li><p>增加看穿式监管相关API接口的返回值。</p></li>
+<li><p>主页新增版本兼容性说明，务必了解！</p></li>
+</ol></li>
+<li><p>2019/3/14</p>
+<ol>
+<li>增加有关看穿式监管相关问题接单。</li>
+</ol></li>
+</ul>
+
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="YDZY.html" alt="←">&lt; 前页</a> <a href="_index.html" alt="Ctrl+I">回目录</a> <a href="6.5.1BBGXSM.html" alt="→">后页 &gt;</a></p></div>
+<script language="javascript" type="text/javascript">
+function onDocKeydown(e) {
+e = e || window.event;
+if(e.keyCode==37){　　　//快捷键 left
+window.location.href='YDZY.html';
+return;
+}
+if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+window.location.href='_index.html';
+return;
+}
+if(e.keyCode==39){　　　//快捷键 right
+window.location.href='6.5.1BBGXSM.html';
+return;
+}
+}
+document.onkeydown=onDocKeydown;
+</script>
+
+<p style='text-indent:0;'><div><img id="theme_switcher" src="images~/theme_switcher.png" onclick="SwitchTheme()"/></p><script>$(document).ready(LoadUserSelectedTheme());</script></body></html>

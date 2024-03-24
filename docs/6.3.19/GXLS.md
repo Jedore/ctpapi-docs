@@ -1,0 +1,76 @@
+<p>描述主要和重要更新内容。</p>
+<span class="anchor" id="5d974acb-0da8-4513-8e65-d23f5caeb883"></span>
+## 1.版本
+<p><strong>v2020.04.29</strong></p>
+<span class="anchor" id="4e9ce962-5ac7-4f7e-b7a7-caf270df1a02"></span>
+## 2.更新历史
+<ul>
+<li><p>2020/04/29</p>
+<ol>
+<li><p>更新到6.3.19 api说明，更新对应新增字段。</p></li>
+<li><p>新增tas介绍</p></li>
+<li><p>新增fens介绍</p></li>
+<li><p>更正代码示例错误，Release()前使用RegisterSpi(NULL)，这个代码是错误的，会导致api概率崩溃。</p></li>
+<li><p>新增ReqUserLogout、ReqAuthenticate、增加流控参数部分说明、郑商所行情说明。</p></li>
+</ol></li>
+<li><p>2020/03/13</p>
+<ol>
+<li>新增init/release线程安全说明</li>
+</ol></li>
+<li><p>2020/03/06</p>
+<ol>
+<li>修正logout之后是否会触发重连机制</li>
+</ol></li>
+<li><p>2020/02/21</p>
+<ol>
+<li><p>新添加通讯模式中基本接口所属的数据流</p></li>
+<li><p>完善做市商接受询价的说明</p></li>
+<li><p>修改对于撤单接口就上期所新增挂单激活操作在本系统是否支持说明</p></li>
+<li><p>新增条件单说明</p></li>
+<li><p>新增各个交易所盘中行情合约状态推送的具体状态</p></li>
+</ol></li>
+<li><p>2019/11/28</p>
+<ol>
+<li><p>新增做市商询价和报价指令介绍</p></li>
+<li><p>修正SubscribeForQuoteRsp中FAQ回答错误。普通投资者只能订阅上期所和中金所询价通知 改为 普通投资者能订阅四所的询价通知。</p></li>
+</ol></li>
+<li><p>2019/07/12</p>
+<ol>
+<li>新增报单回调规则、报价回调规则</li>
+</ol></li>
+<li><p>2019/07/03</p>
+<ol>
+<li>新增相关穿透式的一些问题回答</li>
+</ol></li>
+<li><p>2019/06/27</p>
+<ol>
+<li><p>新增大商所组保业务说明</p></li>
+<li><p>修正OnRspQryInvestorPosition和OnRspQryInvestorPositionDetail里缺失TimeFirstVolume和PositionCostOffset字段的问题</p></li>
+</ol></li>
+<li><p>2019/06/05</p>
+<ol>
+<li>新增CTP流控说明</li>
+</ol></li>
+<li><p>2019/05/27</p>
+<ol>
+<li><p>新增交易接口和行情接口代码示例说明。</p></li>
+<li><p>新增阅读指引，方便用户快速上手chm文档。</p></li>
+</ol></li>
+<li><p>2019/04/29</p>
+<ol>
+<li>新增看穿式监管数据采集的常见FAQ。</li>
+</ol></li>
+<li><p>2019/4/11</p>
+<ol>
+<li>新增二代行情API接口说明，该API新增接口QryMulticastInstrument。</li>
+</ol></li>
+<li><p>2019/3/14</p>
+<ol>
+<li><p>增加看穿式监管相关API接口的返回值。</p></li>
+<li><p>主页新增版本兼容性说明，务必了解！</p></li>
+</ol></li>
+<li><p>2019/3/14</p>
+<ol>
+<li>增加有关看穿式监管相关问题接单。</li>
+</ol></li>
+</ul>

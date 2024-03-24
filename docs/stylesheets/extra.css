@@ -1,0 +1,13 @@
+.md-typeset h1 {
+    font-width: 700;
+    /*color: blueviolet;*/
+}
+
+.md-content {
+    text-indent: 2em;
+}
+
+.md-content li {
+    text-indent: 0em;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+<p>请求查询交易所</p>
+<p>响应: <a href="../../CTHOSTFTDCTRADERAPI/ONRSPQRYEXCHANGE/">OnRspQryExchange</a></p>
+<span class="anchor" id="ec0be41c-dec3-4ada-89e1-4bda4c838a43"></span>
+## 1.函数原型
+<p>virtual int ReqQryExchange(CThostFtdcQryExchangeField *pQryExchange, int nRequestID) = 0;</p>
+<span class="anchor" id="68672778-32bf-4320-9516-98ea41a9c9a1"></span>
+## 2.参数
+<p>pQryExchange：查询交易所</p>
+<table><tr><th style="TEXT-ALIGN: center;">字段类型</th><th style="TEXT-ALIGN: center;">字段名称</th><th style="TEXT-ALIGN: center;">含义</th><th style="TEXT-ALIGN: center;">是否可作为过滤条件</th></tr><tr><td style="TEXT-ALIGN: left;">TThostFtdcExchangeIDType</td>
+<td style="TEXT-ALIGN: left;">ExchangeID</td>
+<td style="TEXT-ALIGN: left;">交易所代码</td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">是</font></strong></td>
+</tr>
+</table>
+<p>nRequestID：请求ID，对应响应里的nRequestID，无递增规则，由用户自行维护。</p>
+<span class="anchor" id="08df0696-391b-48ed-b409-559369d6c3eb"></span>
+## 3.返回
+<p>0，代表成功。</p>
+<p>-1，表示网络连接失败；</p>
+<p>-2，表示未处理请求超过许可数；</p>
+<p>-3，表示每秒发送请求数超过许可数。</p>
+<span class="anchor" id="33b67875-3796-42bd-9868-95d915bcdb2d"></span>
+## 4.调用示例
+<p>无</p>
+<span class="anchor" id="a55907fb-2b8a-4d29-acdb-862208890036"></span>
+## 5.FAQ
+<p>无</p>

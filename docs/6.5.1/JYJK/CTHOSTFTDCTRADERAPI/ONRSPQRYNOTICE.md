@@ -1,0 +1,34 @@
+<p>请求查询客户通知响应，当执行ReqQryNotice后，该方法被调用。</p>
+<span class="anchor" id="a19319b9-5240-4f78-af58-caec76dcc933"></span>
+## 1.函数原型
+<p>virtual void OnRspQryNotice(CThostFtdcNoticeField *pNotice, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
+<span class="anchor" id="a0c816a1-1188-4fd2-9593-89abb32e87b5"></span>
+## 2.参数
+<p>pNotice：客户通知</p>
+<pre><code>struct CThostFtdcNoticeField
+{
+    ///经纪公司代码
+    TThostFtdcBrokerIDType BrokerID;
+    ///消息正文
+    TThostFtdcContentType Content;
+    ///经纪公司通知内容序列号
+    TThostFtdcSequenceLabelType SequenceLabel;
+};
+</code></pre>
+<p>pRspInfo：响应信息</p>
+<pre><code>struct CThostFtdcRspInfoField
+{
+    ///错误代码
+    TThostFtdcErrorIDType ErrorID;
+    ///错误信息
+    TThostFtdcErrorMsgType ErrorMsg;
+};
+</code></pre>
+<p>nRequestID：返回用户操作请求的ID，该ID 由用户在操作请求时指定。</p>
+<p>bIsLast：指示该次返回是否为针对nRequestID的最后一次返回。</p>
+<span class="anchor" id="6196c093-618a-45a9-bae5-62796ae092d2"></span>
+## 3.返回
+<p>无</p>
+<span class="anchor" id="c2a3ff8a-258c-45fb-9135-ee12165add0f"></span>
+## 4.FAQ
+<p>无</p>
