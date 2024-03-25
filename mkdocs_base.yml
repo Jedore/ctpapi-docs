@@ -5,7 +5,7 @@ site_dir: ctpapi-docs
 theme:
   language: zh
   name: material
-  #  custom_dir: overrides
+  custom_dir: overrides
 #  logo: assets/avatar.png
   favicon: images/favicon.ico
   icon:
