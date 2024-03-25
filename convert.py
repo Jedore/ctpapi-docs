@@ -149,7 +149,9 @@ def update_nav(new_nav):
 def copy_doc(path):
     for file in glob.glob(os.path.join(path, '*.h')):
         dst = os.sep.join(["docs", *file.split(os.sep)[1:]])
-        shutil.copy(file, dst)
+        with open(file, 'r', encoding='gbk') as f1:
+            with open(dst, 'w', encoding='utf8') as f2:
+                f2.write(f1.read())
     for file in glob.glob(os.path.join(path, '*.xml')):
         dst = os.sep.join(["docs", *file.split(os.sep)[1:]])
         shutil.copy(file, dst)
