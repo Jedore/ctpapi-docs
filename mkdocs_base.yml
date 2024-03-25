@@ -65,7 +65,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Jedore
-      name: Jedore
+      name: Github
     - icon: fontawesome/solid/paper-plane
       link: mailto:jedorefight@gmail.com
       name: Gmail
