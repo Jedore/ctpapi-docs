@@ -6,7 +6,7 @@ theme:
   language: zh
   name: material
   #  custom_dir: overrides
-  logo: assets/avatar.png
+#  logo: assets/avatar.png
   favicon: images/favicon.ico
   icon:
     repo: fontawesome/brands/git-alt
