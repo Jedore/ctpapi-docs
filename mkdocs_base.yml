@@ -1,16 +1,17 @@
 site_name: CTPAPI-DOCS
-repo_url: https://github.com/Jedore
-repo_name: Jedore
+repo_url: https://github.com/Jedore/ctpapi-docs
+repo_name: Jedore/ctpapi-docs
 site_dir: ctpapi-docs
 theme:
   language: zh
   name: material
   #  custom_dir: overrides
-#  logo: assets/openctp.jpg
-#  favicon: images/openctp.jpg
+  logo: assets/avatar.png
+  favicon: images/favicon.ico
   icon:
     repo: fontawesome/brands/github
   #    view: material/eye
+  #    edit: material/pencil
   features:
     - navigation.top
     - navigation.tabs
@@ -19,22 +20,24 @@ theme:
     - navigation.tracking
     - navigation.path
     - navigation.prune
+    - navigation.footer
     - toc.follow
     - search.highlight
     - search.suggest
     - search.share
   #    - content.action.view
+  #    - content.action.edit
   palette:
     - scheme: default
       toggle:
-        icon: material/weather-sunny
-        name: 阳
+        icon: material/brightness-7
+        name: 太阳
 #      primary: white
 #      accent: purple
     - scheme: slate
       toggle:
-        icon: material/weather-night
-        name: 阴
+        icon: material/brightness-4
+        name: 月亮
       primary: black
 
 
@@ -59,4 +62,11 @@ copyright: Copyright &copy; 2024 Jedore
 extra:
   generator: true
 #  homepage: https://www.jedore.top/ctpapi-docs
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Jedore
+      name: Jedore
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:jedorefight@gmail.com
+      name: Gmail
 

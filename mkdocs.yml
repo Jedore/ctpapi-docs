@@ -1,16 +1,17 @@
 site_name: CTPAPI-DOCS
-repo_url: https://github.com/Jedore
-repo_name: Jedore
+repo_url: https://github.com/Jedore/ctpapi-docs
+repo_name: Jedore/ctpapi-docs
 site_dir: ctpapi-docs
 theme:
   language: zh
   name: material
   #  custom_dir: overrides
-#  logo: assets/openctp.jpg
-#  favicon: images/openctp.jpg
+  logo: assets/avatar.png
+  favicon: images/favicon.ico
   icon:
-    repo: fontawesome/brands/github
-  #    view: material/eye
+    repo: fontawesome/brands/git-alt
+#    view: material/eye
+#    edit: material/pencil
   features:
     - navigation.top
     - navigation.tabs
@@ -19,22 +20,24 @@ theme:
     - navigation.tracking
     - navigation.path
     - navigation.prune
+    - navigation.footer
     - toc.follow
     - search.highlight
     - search.suggest
     - search.share
-  #    - content.action.view
+#    - content.action.view
+#    - content.action.edit
   palette:
     - scheme: default
       toggle:
-        icon: material/weather-sunny
-        name: 阳
+        icon: material/brightness-7
+        name: 太阳
 #      primary: white
 #      accent: purple
     - scheme: slate
       toggle:
-        icon: material/weather-night
-        name: 阴
+        icon: material/brightness-4
+        name: 月亮
       primary: black
 
 
@@ -59,6 +62,13 @@ copyright: Copyright &copy; 2024 Jedore
 extra:
   generator: true
 #  homepage: https://www.jedore.top/ctpapi-docs
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Jedore
+      name: Jedore
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:jedorefight@gmail.com
+      name: Gmail
 
 nav:
 - Home: index.md
@@ -349,7 +359,7 @@ nav:
       - 通讯模式: 6.3.15/QTYWGZ/SJLSM.md
       - 做市商询价和报价: 6.3.15/QTYWGZ/BJHXJ.md
 - 6.3.19:
-    ' ':
+    　:
     - 主页: 6.3.19/ZY.md
     - 阅读指引: 6.3.19/YDZY.md
     - 文档版本与重要更新: 6.3.19/GXLS.md
@@ -635,7 +645,7 @@ nav:
       - 协议方式接收二代组播行情: 6.3.19/QTYWGZ/EDHQJR.md
       - TAS介绍: 6.3.19/QTYWGZ/TASJS.md
 - 6.5.1:
-    ' ':
+    　:
     - 主页: 6.5.1/ZY.md
     - 阅读指引: 6.5.1/YDZY.md
     - 文档版本与重要更新: 6.5.1/GXLS.md
@@ -927,7 +937,7 @@ nav:
       - TAS介绍: 6.5.1/QTYWGZ/TASJS.md
       - 条件单规则: 6.5.1/QTYWGZ/TJDGZ.md
 - 6.6.1:
-    ' ':
+    　:
     - 主页: 6.6.1/ZY.md
     - 阅读指引: 6.6.1/YDZY.md
     - 文档版本与重要更新: 6.6.1/GXLS.md
@@ -1225,7 +1235,7 @@ nav:
       - 条件单规则: 6.6.1/QTYWGZ/TJDGZ.md
       - 各交易所特殊指令: 6.6.1/QTYWGZ/GJYSTSZL.md
 - 6.6.7:
-    ' ':
+    　:
     - 主页: 6.6.7/ZY.md
     - 阅读指引: 6.6.7/YDZY.md
     - 文档版本与重要更新: 6.6.7/GXLS.md
@@ -1529,7 +1539,7 @@ nav:
       - 各交易所特殊指令: 6.6.7/QTYWGZ/GJYSTSZL.md
       - 接口中一些重要序号说明: 6.6.7/QTYWGZ/JKZYXZYXHSM.md
 - 6.6.9:
-    ' ':
+    　:
     - 主页: 6.6.9/ZY.md
     - 阅读指引: 6.6.9/YDZY.md
     - 文档版本与重要更新: 6.6.9/GXLS.md
@@ -1852,7 +1862,7 @@ nav:
       - 接口中一些重要序号说明: 6.6.9/QTYWGZ/JKZYXZYXHSM.md
       - 期货期权的行权、自对冲规则: 6.6.9/QTYWGZ/QHQQDHQ-ZDCGZ.md
 - 6.7.0:
-    ' ':
+    　:
     - 主页: 6.7.0/ZY.md
     - 阅读指引: 6.7.0/YDZY.md
     - 文档版本与重要更新: 6.7.0/GXLS.md
@@ -2176,7 +2186,7 @@ nav:
       - 接口中一些重要序号说明: 6.7.0/QTYWGZ/JKZYXZYXHSM.md
       - 期货期权的行权、自对冲规则: 6.7.0/QTYWGZ/QHQQDHQ-ZDCGZ.md
 - 6.7.2:
-    ' ':
+    　:
     - 主页: 6.7.2/ZY.md
     - 阅读指引: 6.7.2/YDZY.md
     - 文档版本与重要更新: 6.7.2/GXLS.md
