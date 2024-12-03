@@ -9,7 +9,7 @@ theme:
 #  logo: assets/avatar.png
   favicon: images/favicon.ico
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
   #    view: material/eye
   #    edit: material/pencil
   features:
