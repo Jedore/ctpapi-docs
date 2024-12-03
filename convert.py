@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup, Tag
 
 
 def versions():
-    nav_all = [{"Home": "index.md"}]
+    nav_all = [{"Home": "index.md"}, {"常量": "const.md"}]
     for path in sorted(glob.glob('sources/*')):
         nav = convert(path)
         nav_all.append(nav)
@@ -107,9 +107,9 @@ def gen_content(href):
             else:
                 sub = str(child).replace('.html">', '/">')
                 if depth == 1:
-                    sub, _ = re.subn('href="([^\.])', 'href="../\\1', sub)
+                    sub, _ = re.subn(r'href="([^\.])', 'href="../\\1', sub)
                 else:
-                    sub, _ = re.subn('href="', 'href="../', sub)
+                    sub, _ = re.subn(r'href="', 'href="../', sub)
                 # sub = str(child).replace('href="', 'href="../')
                 lines.append(sub + "\n")
 
