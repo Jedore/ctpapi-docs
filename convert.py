@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup, Tag
 
 
 def versions():
-    nav_all = [{"Home": "index.md"}, {"常量": "const.md"}]
+    nav_all = [{"Home": "index.md"}, {"CTP常量": "const.md"}]
     for path in sorted(glob.glob('sources/*')):
         nav = convert(path)
         nav_all.append(nav)

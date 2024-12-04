@@ -72,7 +72,7 @@ extra:
 
 nav:
 - Home: index.md
-- 常量: const.md
+- CTP常量: const.md
 - 6.3.15:
     ' ':
     - 主页: 6.3.15/ZY.md
