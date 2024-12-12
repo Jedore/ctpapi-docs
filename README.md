@@ -3,5 +3,5 @@
 
 
 ```bash
-$ mkdocs server
+$ mkdocs serve
 ```
